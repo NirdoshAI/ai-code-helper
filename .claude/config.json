@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "read_hook": {
+      "enabled": true,
+      "add_context": true,
+      "analyze_code": true
+    },
+    "edit_hook": {
+      "enabled": true,
+      "validate_syntax": true,
+      "format_code": true,
+      "add_docstrings": true,
+      "groq_enhancement": true
+    },
+    "run_hook": {
+      "enabled": true,
+      "log_commands": true,
+      "safety_check": true,
+      "enhance_commands": true
+    }
+  },
+  "groq": {
+    "enabled": true,
+    "model": "llama-3.3-70b-versatile",
+    "enhance_edits": true,
+    "code_analysis": true
+  },
+  "formatting": {
+    "use_black": true,
+    "line_length": 88,
+    "add_docstrings": true
+  },
+  "logging": {
+    "command_log": "command_log.jsonl",
+    "max_log_size": 1000
+  }
+}
